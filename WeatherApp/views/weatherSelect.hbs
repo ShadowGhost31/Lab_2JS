@@ -1,0 +1,10 @@
+{{> header }}
+<main>
+    <h1>Виберіть місто</h1>
+    <ul>
+        {{#each cities}}
+            <li><a href="/weather/{{city}}" class="city-link">{{city}}</a></li>
+        {{/each}}
+    </ul>
+</main>
+{{> footer }}

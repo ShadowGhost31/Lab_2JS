@@ -1,0 +1,10 @@
+{{> header }}
+<main>
+    <h1>Погода в місті {{ city }}</h1>
+    <img src="{{ weather.icon }}" alt="Weather Icon" class="weather-icon"> <!-- Added class "weather-icon" -->
+    <p>Опис погоди: {{ weather.description }}</p>
+    <p>Температура: {{ weather.temperature }} °C</p>
+    <p>Вологість: {{ weather.humidity }}%</p>
+    <p>Тиск: {{ weather.pressure }} мм ртутного стовпа</p>
+</main>
+{{> footer }}
